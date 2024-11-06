@@ -1,0 +1,20 @@
+meta {
+  name: get trees
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8000/trees
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 2,
+    "species": "willow",
+    "age": 100,
+    "location": "Unknown"
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: put request
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8000/trees/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "2",
+    "species": "Willow",
+    "age": 301,
+    "location": "Juniper Perk"
+  }
+}
